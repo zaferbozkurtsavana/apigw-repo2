@@ -2,9 +2,9 @@ apiVersion: "xbank/v1beta1"
 kind: "Gateway"
 metadata:
   name: "repo2"
-  version: "v1"
+  version: "v3"
   minorVersion: "1.4"
-  teamName: "A-Team"
+  teamName: "B-Team"
 spec:
   muhtar: "1.6.6"
   encumen: "1.2.3"
@@ -43,4 +43,4 @@ spec:
       enabled: true
   transformationRepo:
     url: "https://github.com/zaferbozkurtsavana/apigw-repo2"
-    tag: "v1.0.0"
+    tag: "v1.0.1"
