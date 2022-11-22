@@ -1,5 +1,5 @@
 apiVersion: "xbank/v1beta1"
-kind: "Gateway"
+kind: "Gatewayt"
 metadata:
   name: "repo2"
   version: "v3"
@@ -28,19 +28,15 @@ spec:
     transformation:
       request:
         filepath: "/repo2-path/getAlisgidisCustomerData/transformation/request.mjs"
-        type: "middleware"
         timeoutInMilliSeconds: 4000
       response:
         filepath: "/repo2-path/getAlisgidisCustomerData/transformation/response.mjs"
-        type: "middleware"
         timeoutInMilliSeconds: 4000
     validation:
       request:
         filepath: "/repo2-path/getAlisgidisCustomerData/validation/request.mjs"
       response:
         filepath: "/repo2-path/getAlisgidisCustomerData/validation/response.mjs"
-    authorization:
-      enabled: true
   transformationRepo:
     url: "https://github.com/zaferbozkurtsavana/apigw-repo2"
-    tag: "v1.0.1"
+    tag: "v1.0.2"
