@@ -10,8 +10,8 @@ spec:
   encumen: "1.2.3"
   contextPath: "/repo2-path"
   operations:
-  - name: "test-zafer"
-    description: "getAlisgidisCustomerData"
+  - name: "alis-gidis"
+    description: "alis-gidis"
     httpVerb: "POST"
     route: "/get-alisgidis-customer-data"
     target:
@@ -27,16 +27,16 @@ spec:
         value: "RBF_GET_ALISGIDIS_CUSTOMER_DATA"
     transformation:
       request:
-        filepath: "/repo2-path/test-zafer/transformation/request.mjs"
+        filepath: "/repo2-path/alis-gidis/transformation/request.mjs"
         timeoutInMilliSeconds: 4000
       response:
-        filepath: "/repo2-path/test-zafer/transformation/response.mjs"
+        filepath: "/repo2-path/alis-gidis/transformation/response.mjs"
         timeoutInMilliSeconds: 4000
     validation:
       request:
-        filepath: "/repo2-path/test-zafer/validation/request.mjs"
+        filepath: "/repo2-path/alis-gidis/validation/request.mjs"
       response:
-        filepath: "/repo2-path/test-zafer/validation/response.mjs"
+        filepath: "/repo2-path/alis-gidis/validation/response.mjs"
   transformationRepo:
     url: "https://github.com/zaferbozkurtsavana/apigw-repo2"
-    tag: "v1.0.3"
+    tag: "v1.0.4"
